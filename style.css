@@ -7,7 +7,10 @@
 body{
     font-family: 'Slabo', serif;
     margin: 0;
-    background-color:white;
+    background-color: white;
+    font-size: x-large;
+    
+    height: 1000vh;
 }
 
 .movie{
@@ -43,6 +46,7 @@ main {
     overflow: hidden;
     margin-top: 50px;
     flex-wrap: wrap;
+    margin-left: 17%;
 }
 
 header{
@@ -78,21 +82,22 @@ header h2{
 .search{
     
     background-color: transparent;
-    border: 2px solid #22254b;
+    border: 20px solid #22254b;
     padding: 0.5rem 1rem;
-    border-radius: 50px;
+    border-radius: 60px;
     font-family: inherit;
     color: white;
 }
 .search::placeholder{
     color: white;
+    font-size: large;
 }
 
 .search:hover{
     cursor: text;
 }
 .search:focus{
-    background-color: #22254b;
+ background-color: #22254b;
     outline: none;
 }
 .overview{
@@ -114,13 +119,9 @@ header h2{
 .overview h4{
     margin-top: 0;
 }
-.Next{
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 25px;
-    margin-right: 25px;
-}
+
 .next{
+    margin-left: 20px;
     display: inline-block;
     padding: 10px 20px;
     font-size: 20px;
@@ -134,8 +135,15 @@ header h2{
     cursor: pointer;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    
 }
 
 .next:hover{  background-color: #4d4f8e;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);}
+
+.Next{
+    display: flex;
+    flex-direction: space-evenly;
+    justify-content: center;
+}
 

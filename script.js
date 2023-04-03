@@ -8,6 +8,7 @@ const SEARCHAPI = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&
 const search = document.getElementById('search'); 
 const form = document.getElementById('form');
 const main = document.getElementById('main');  
+const previous = document.getElementById('back')
 
 
 //initially getting fav movies by popularity
